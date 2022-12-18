@@ -32,7 +32,7 @@ except:
     os.system("pip install alive_progress")
 
 try:
-    os.system("cls")
+    os.system("clear")
 except:
     os.system("clear")
 
@@ -65,7 +65,7 @@ class RedditBot:
         self.__subcatego = subcatego
         self.__nbr_message = 240
 
-        os.system("cls")
+        os.system("clear")
 #╔══════════════════════════════════════╗
 #║                START                 ║
 #╚══════════════════════════════════════╝  
@@ -78,7 +78,7 @@ class RedditBot:
          '.(   ).'        )/          )/ ._.'   )/   )/  )/ ._.'   )/      \n """, ))
           
         category = input(Colorate.Horizontal(Colors.red_to_yellow, "                          Press enter to start ! ",))
-        os.system("cls")
+        os.system("clear")
         print(Colorate.Horizontal(Colors.red_to_yellow, """
       )\  )\  )`-.--. .-,.-.,-.         )\.-.     /`-.     .-./(     /`-.  
      (  \, /  ) ,-._( ) ,, ,. (       ,'     )  ,' _  \  ,'     )  ,' _  \ 
@@ -173,7 +173,7 @@ Allez consulter votre compte reddit il se peut que vous êtes rate limited ou qu
                                     requests.post(config['webhook'], json=error)
                                     error = True
 
-                                    os.system("cls")
+                                    os.system("clear")
                                     print(Spy.violet)
                                     cooldown = self.__cooldown
                                     self.__cooldown *= 10
@@ -186,7 +186,7 @@ Allez consulter votre compte reddit il se peut que vous êtes rate limited ou qu
                                             bar2()
 
 
-                                    os.system("cls")
+                                    os.system("clear")
 
                                     print(self.__confignumber)
                                     self.run()
@@ -198,7 +198,7 @@ Allez consulter votre compte reddit il se peut que vous êtes rate limited ou qu
 
 
 try:
-    os.system("cls")
+    os.system("clear")
 except:
     os.system("clear")         
 RedditBot().run()
