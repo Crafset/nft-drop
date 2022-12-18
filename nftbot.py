@@ -119,12 +119,12 @@ class RedditBot:
 #║           MESSAGES TELEGRAM          ║
 #╚══════════════════════════════════════╝
                     # Créez un nouvel objet bot en utilisant votre token d'accès API
-                    bot = telegram.Bot(token='5974861797:AAG76oDYSVLhFEn3FUOSb6xS0uySJAdpXhw')
+                    #bot = telegram.Bot(token='5974861797:AAG76oDYSVLhFEn3FUOSb6xS0uySJAdpXhw')
 
                     # Envoyez un message au groupe en utilisant la méthode send_message
-                    bot.send_message(chat_id='-1001875291848', text=f'''       🚨 𝗡𝗢𝗨𝗩𝗘𝗔𝗨 𝗣𝗢𝗦𝗧𝗘 🚨
-                                                                        👑 𝗡𝗢𝗠 𝗗𝗨 𝗣𝗢𝗦𝗧 : {submission.title}
-                                                                        💎 𝗖𝗢𝗠𝗠𝗘𝗡𝗧𝗔𝗜𝗥𝗘 : {config['metakey']} | {random.choice(config['phrase'])}''')
+                    #bot.send_message(chat_id='-1001875291848', text=f'''       🚨 𝗡𝗢𝗨𝗩𝗘𝗔𝗨 𝗣𝗢𝗦𝗧𝗘 🚨
+                                                                        #👑 𝗡𝗢𝗠 𝗗𝗨 𝗣𝗢𝗦𝗧 : {submission.title}
+                                                                        #💎 𝗖𝗢𝗠𝗠𝗘𝗡𝗧𝗔𝗜𝗥𝗘 : {config['metakey']} | {random.choice(config['phrase'])}''')
 #╔══════════════════════════════════════╗
 #║                TERMINÉ               ║
 #╚══════════════════════════════════════╝
@@ -164,11 +164,11 @@ class RedditBot:
 #║                ERREUR                ║
 #╚══════════════════════════════════════╝
                                     # Créez un nouvel objet bot en utilisant votre token d'accès API
-                                    bot = telegram.Bot(token='5974861797:AAG76oDYSVLhFEn3FUOSb6xS0uySJAdpXhw')
+                                    #bot = telegram.Bot(token='5974861797:AAG76oDYSVLhFEn3FUOSb6xS0uySJAdpXhw')
 
                                     # Envoyez un message au groupe en utilisant la méthode send_message
-                                    bot.send_message(chat_id='-1001868608748', text=f'''❌ | ERREUR 
-Allez consulter votre compte reddit il se peut que vous êtes rate limited ou que vôtre compte soit bannis de reddit ou du subreddit !''')
+                                    #bot.send_message(chat_id='-1001868608748', text=f'''❌ | ERREUR 
+#Allez consulter votre compte reddit il se peut que vous êtes rate limited ou que vôtre compte soit bannis de reddit ou du subreddit !''')
 
                                     requests.post(config['webhook'], json=error)
                                     error = True
