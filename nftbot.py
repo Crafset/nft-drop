@@ -71,7 +71,7 @@ class RedditBot:
 #╚══════════════════════════════════════╝           
         category = {}
         os.system("clear")
-        print(Colorate.Horizontal(Colors.red_to_yellow, "                              (　-_･) ︻デ═一 ▸", ))            
+        print(Colorate.Horizontal(Colors.red_to_yellow, "                  (　-_･) ︻デ═一 ▸", ))            
 
         self.__category = reddit.subreddit(subcatego).new(limit=nbr_message)
 
@@ -92,7 +92,7 @@ class RedditBot:
 #║                TEXTE                 ║
 #╚══════════════════════════════════════╝        
         while start or (message != self.__nbr_message):
-            with alive_bar(self.__nbr_message, title=f"{Spy.rouge}> Reddit Bot", bar='classic',spinner='waves') as bar:
+            with alive_bar(self.__nbr_message, title=f"{Spy.rouge}", bar='classic',spinner='waves') as bar:
 
                 for submission in self.__category:
                     if message == self.__nbr_message:
