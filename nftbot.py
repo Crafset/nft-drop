@@ -68,16 +68,8 @@ class RedditBot:
         os.system("clear")
 #╔══════════════════════════════════════╗
 #║                START                 ║
-#╚══════════════════════════════════════╝  
-        print(Colorate.Horizontal(Colors.red_to_yellow, """
-      )\  )\  )`-.--. .-,.-.,-.         )\.-.     /`-.     .-./(     /`-.  
-     (  \, /  ) ,-._( ) ,, ,. (       ,'     )  ,' _  \  ,'     )  ,' _  \ 
-      ) \ (   \ `-._  \( |(  )/      (  .-, (  (  '-' ( (  .-, (  (  '-' ( 
-     ( ( \ \   ) ,_(     ) \          ) '._\ )  ) ,_ .'  ) '._\ )  ) ,._.' 
-      `.)/  ) (  \       \ (         (  ,   (  (  ' ) \ (  ,   (  (  '     
-         '.(   ).'        )/          )/ ._.'   )/   )/  )/ ._.'   )/      \n """, ))
-          
-        category = input(Colorate.Horizontal(Colors.red_to_yellow, "                          Press enter to start ! ",))
+#╚══════════════════════════════════════╝           
+        category = {}
         os.system("clear")
         print(Colorate.Horizontal(Colors.red_to_yellow, """
       )\  )\  )`-.--. .-,.-.,-.         )\.-.     /`-.     .-./(     /`-.  
@@ -89,8 +81,8 @@ class RedditBot:
                                                                     """, ))
 
         print(Colorate.Horizontal(Colors.red_to_yellow, "                              (　-_･) ︻デ═一 ▸", ))            
-        if category == "":
-            self.__category = reddit.subreddit(subcatego).new(limit=nbr_message)
+
+        self.__category = reddit.subreddit(subcatego).new(limit=nbr_message)
 
     def run(self):
         with open("config.json", 'r') as confg:
