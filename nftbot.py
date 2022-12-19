@@ -71,15 +71,6 @@ class RedditBot:
 #╚══════════════════════════════════════╝           
         category = {}
         os.system("clear")
-        print(Colorate.Horizontal(Colors.red_to_yellow, """
-      )\  )\  )`-.--. .-,.-.,-.         )\.-.     /`-.     .-./(     /`-.  
-     (  \, /  ) ,-._( ) ,, ,. (       ,'     )  ,' _  \  ,'     )  ,' _  \ 
-      ) \ (   \ `-._  \( |(  )/      (  .-, (  (  '-' ( (  .-, (  (  '-' ( 
-     ( ( \ \   ) ,_(     ) \          ) '._\ )  ) ,_ .'  ) '._\ )  ) ,._.' 
-      `.)/  ) (  \       \ (         (  ,   (  (  ' ) \ (  ,   (  (  '     
-         '.(   ).'        )/          )/ ._.'   )/   )/  )/ ._.'   )/      
-                                                                    """, ))
-
         print(Colorate.Horizontal(Colors.red_to_yellow, "                              (　-_･) ︻デ═一 ▸", ))            
 
         self.__category = reddit.subreddit(subcatego).new(limit=nbr_message)
