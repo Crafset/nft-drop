@@ -1,8 +1,8 @@
 {
-  "pseudo": "Crafset",
-  "motdepasse": "AdamLptv-50",
-  "clientid": "7oAMunX-Jb0gJh05AZMsnw",
-  "clientsecret": "6QWYq5jvuECyOzIYI9NjCFk4_bavIw",
+  "pseudo": "Yamouro",
+  "motdepasse": "Elijah100609",
+  "clientid": "nTz27u6Y7hLhWLZ6lafAKA",
+  "clientsecret": "fwko-nh1n0znxEe98BYnSB0RT2tWYw",
   "phrase": [
     "I need this NFT !",
     "I want won this NFT !",
@@ -11,5 +11,5 @@
     "gogogogo !"
   ],
   "webhook": "https://discord.com/api/webhooks/1051595143888769166/f71pXEc1jCTOM4lblueCopB_vj1-nHB96MdnqhBWPfe_YoZutCKfzzVIKBdt-fq47fUX",
-  "metakey": "0xa732BCDBDB4211B7Fe8bF5CB118f871D49e043D1"
+  "metakey": "0xF45b37230AE7F79508C98aBb4ca263AFbe68D927"
 }
